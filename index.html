@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Halaman HTML Singkat</title>
+  <style>
+    :root{--bg:#f6f8fa;--card:#ffffff;--accent:#2563eb}
+    body{font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial; margin:0; background:var(--bg); color:#111}
+    header{background:linear-gradient(90deg, #0ea5e9, #7c3aed); color:white; padding:28px 20px}
+    .container{max-width:900px;margin:20px auto;padding:0 16px}
+    h1{margin:0;font-size:1.5rem}
+    p.lead{opacity:0.95}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:18px}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.08)}
+    button{background:var(--accent);color:white;border:0;padding:10px 14px;border-radius:8px;cursor:pointer}
+    footer{margin-top:24px;text-align:center;color:#555;font-size:0.9rem}
+    @media (max-width:480px){header{padding:20px}h1{font-size:1.15rem}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Demo Halaman HTML Singkat</h1>
+      <p class="lead">Contoh halaman sederhana: struktur HTML, CSS ringan, dan sedikit JavaScript.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="cards">
+      <article class="card">
+        <h3>Card 1</h3>
+        <p>Ini contoh teks di card pertama. Gunakan ini sebagai template cepat untuk proyek kecil.</p>
+        <button onclick="sayHello()">Klik Saya</button>
+      </article>
+
+      <article class="card">
+        <h3>Card 2</h3>
+        <p>Tambah konten, gambar, atau tombol. Tata letak otomatis menyesuaikan dengan ukuran layar.</p>
+      </article>
+
+      <article class="card">
+        <h3>Card 3</h3>
+        <p>Ringkas, responsif, dan mudah dimodifikasi.</p>
+      </article>
+    </section>
+
+    <footer>
+      <small>© 2025 — Contoh singkat oleh ChatGPT</small>
+    </footer>
+  </main>
+
+  <script>
+    // Fungsi JavaScript sederhana
+    function sayHello(){
+      const name = prompt('Siapa namamu?','Dea');
+      if(name) alert('Halo, ' + name + '! Selamat belajar HTML.');
+    }
+  </script>
+</body>
+</html>
